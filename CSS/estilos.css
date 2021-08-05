@@ -1,0 +1,223 @@
+
+
+/* 07_Fuentes personalizadas y variables de CSS */
+
+/* ------variables------ */
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+/* ------colores----- */
+:root{
+--orange-color:#f9570b;
+--white-color:white;
+--boton-color:#aa5029;
+/* -----fuentes----- */
+--tipografia1:12px ;
+--formulario:10px ;
+/* -----espaciado----- */
+--space1: 20px;
+--space2: 10px;
+/* -----boxshadow----- */
+--box2:0 0 11px black;
+--box1:0px 0 2px 1px #e6e5e9;
+}
+
+/* ------variables------ */
+
+html,body{
+	padding:0px;
+	margin:0px;
+	font-size: var(--tipografia1);
+	font-family:'Coming Soon', cursive;
+}
+
+nav{
+	display: flex;
+	background-color: var(--orange-color);
+	padding: var(--space1);
+	color: var(--white-color);
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav ul{
+	display: flex;
+
+}
+
+nav li {
+	padding-left: 20px;
+	list-style: none ;
+}
+
+nav li a{
+	color: white;
+	text-decoration: none;
+
+}
+
+nav li a:hover{
+	color: blue;
+}
+
+/*---------------------Main Seccion */
+
+.main_section {
+	padding: 10%;
+	text-align: center;
+	color: blue;
+	
+}
+
+.products {
+	background-image: url("../IMAGES/CIBER.jpg");
+	height: 50px;
+    background-size: cover;
+    background-position: center top; 
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%; 
+    padding: 15%;
+    display: flex;
+}
+
+.product {
+	padding: var(--space1);
+	margin-top: -300px;
+
+}
+
+.product .content {
+	background-color: var(--white-color);
+	padding: 15px;
+	box-shadow: var(--box2);
+	text-align: center;
+}
+
+.img_content {
+	padding: var(--space1);
+	
+}
+
+.servicios {
+	height: 50px;
+    padding: 25%;
+    display: flex;       	
+}
+
+.service {
+	padding: var(--space1);
+	margin-top: -300px;
+	margin-right: var(--space1);		
+}
+
+/* -----CUADRO 1----- */
+.service .serv {
+	padding: var(--space1);
+	box-shadow: var(--box2);
+	text-align: center;	
+	margin-left: -40px;	
+}
+
+.img_serv {	
+	padding: var(--space1);
+	top: 958px;
+	left: 239px;
+	width: 138px;
+	height: 113px;
+	opacity: 1;
+	box-shadow: var(--box2);	
+}
+
+.clientes {
+	display: flex;
+	margin-left: -600px;
+	margin-top: 100px;	
+      	
+}
+
+.client {
+	padding: var(--space1);
+	margin-top: 20px;
+
+}
+
+/* -----CUADRO 1----- */
+.client .cl {
+	padding: 20px;
+	box-shadow: var(--box2);
+	text-align: center;	
+		
+}
+
+.img_cl {	
+	padding: var(--space1);
+	top: 958px;
+	left: 239px;
+	width: 138px;
+	height: 113px;
+	opacity: 1;
+	box-shadow: var(--box2);	
+}
+.main_button {
+	background-color: var(--orange-color);
+	width: 100%;
+	padding: 5px;
+	font-size: 15px;
+	color: white;
+	border: 0;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+.main_button:hover{
+	background-color: var(--boton-color);
+}
+
+.titulo {
+	text-align: center;
+	margin-left: -400px;	
+}
+
+.option{
+	background-color: black;
+	color: var(--white-color);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*vetas*/
+
+.modulo_pago{
+	background-color:var(--white-color);
+	box-shadow:var(--box1);
+	
+	
+}
+.modulo_pago_img{
+	max-width: 150px;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+
+p, label{
+	font-size: var(--formulario);
+}
+
+label{
+	padding-bottom: var(--space2);
+}
+.main_data{
+	width: 100%;
+	height: 35px;
+	border-radius: 2px;
+	border: 1px solid var(--orange-color);
+	box-sizing: border-box;
+}
+
+.modulo_pago .main_button {
+	margin-top: 10px;
+
+}
+	
+
